@@ -83,8 +83,6 @@ public void insert(Test test) {
 }
 ```
 
-
-
 **propagation=Propagation.NOT_SUPPORTED**
 ```
 @Transactional(propagation=Propagation.NOT_SUPPORTED)  
