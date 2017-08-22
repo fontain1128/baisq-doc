@@ -76,7 +76,7 @@ MyBatis自动参与到spring事务管理中，无需额外配置，只要org.myb
 @Transactional(propagation=Propagation.NOT_SUPPORTED)  
 @Override  
 public void insert(Test test) {  
-//事物传播行为是PROPAGATION_NOT_SUPPORTED，以非事务方式运行，不会存入数据库  
+  //事物传播行为是PROPAGATION_NOT_SUPPORTED，以非事务方式运行，不会存入数   据库  
     dao.insert(test);  
 }  
 ```
