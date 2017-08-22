@@ -90,7 +90,7 @@ public void insert(Test test) {
 @Transactional(propagation=Propagation.NOT_SUPPORTED)  
 @Override  
 public void insert(Test test) {  
-    //事物传播行为是PROPAGATION_NOT_SUPPORTED，以非事务方式运行，不会存入数据库  
+  //事物传播行为是PROPAGATION_NOT_SUPPORTED，以非事务方式运行，不会存入数据库  
     dao.insert(test);  
 }  
 ```
