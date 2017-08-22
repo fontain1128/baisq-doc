@@ -78,8 +78,8 @@ private MyBatisDao dao;
 @Transactional  
 @Override  
 public void insert(Test test) {  
-dao.insert(test);  
-throw new RuntimeException("test");//抛出unchecked异常，触发事物，回滚  
+  dao.insert(test);  
+  throw new RuntimeException("test");//抛出unchecked异常，触发事物，回滚  
 }
 ```
 
