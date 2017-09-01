@@ -325,8 +325,7 @@ for(Type genericParameterType : genericParameterTypes){
 ```
 这段代码会打印出”fieldArgClass = java.lang.String”。Type[]数组 fieldArgClass 只有一个结果 – 一个代表 java.lang.String 的 Class 类的实例。Class 类实现了 Type 接口。
 
-
-
+[http://www.jianshu.com/p/2315dda64ad2]
 
 
 
