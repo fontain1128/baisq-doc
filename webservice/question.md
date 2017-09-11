@@ -120,8 +120,7 @@ service:服务器端的一个webService的容器
     port:用来指定一个服务器端处理请求的入口(SEI的实现)
         binding属性：引用上面定义的<binding>
         address:当前webService的请求地址
-        
-        
+     
         
         
          
