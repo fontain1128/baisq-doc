@@ -61,4 +61,39 @@ web service的终端接口
 webService 可能是.net开发的,需要本地修改wsdl文档中的 s:schema = ""..
 为<s:any minOccurs="2" maxOccurs="2"></s:any>
 
-## 
+## wsdl深入浅出
+<defination>
+    <types>
+        <schema> -- 定义约束
+            <element>
+    </types>
+    <message> -- 请求消息，响应消息结构
+        <part>
+    </message>
+    <portType> -- 接口(一个接口就是一个端口类型)
+        <operation>
+            <input>
+            <output>
+    </portType>
+    <binding> -- 接口实现类
+        <operation>
+            <input>
+            <output>
+    </binging>
+    <service> -- 提供实现
+
+##
+<types>
+    //用于请求
+    <sayHello>
+        <arg0>String</arg0>
+    </sayHello>
+    
+    //用于响应
+    <sayHelloResponse>
+        <return>String</return>
+    </sayHelloResponse>
+</types>
+message:用来定义消息的结构
+    part:指定引用types中定义的标签片段
+
