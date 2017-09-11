@@ -82,7 +82,7 @@ webService 可能是.net开发的,需要本地修改wsdl文档中的 s:schema = 
     </binging>
     <service> -- 提供实现
 
-##
+## 详情参考wsdl文档
 外部引用约束
 <types>
     //内部也定义了约束
