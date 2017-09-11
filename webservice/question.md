@@ -94,6 +94,7 @@ webService 可能是.net开发的,需要本地修改wsdl文档中的 s:schema = 
         <return>String</return>
     </sayHelloResponse>
 </types>
+
 message:用来定义消息的结构
     part:指定引用types中定义的标签片段
 
