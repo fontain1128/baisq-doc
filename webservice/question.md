@@ -61,6 +61,4 @@ web service的终端接口
 webService 可能是.net开发的,需要本地修改wsdl文档中的 s:schema = ""..
 为<s:any minOccurs="2" maxOccurs="2"></s:any>
 
-
-
 ## 
