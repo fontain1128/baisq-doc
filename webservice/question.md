@@ -83,7 +83,9 @@ webService 可能是.net开发的,需要本地修改wsdl文档中的 s:schema = 
     <service> -- 提供实现
 
 ##
+外部引用约束
 <types>
+    //内部也定义了约束
     //用于请求
     <sayHello>
         <arg0>String</arg0>
@@ -98,3 +100,29 @@ webService 可能是.net开发的,需要本地修改wsdl文档中的 s:schema = 
 message:用来定义消息的结构
     part:指定引用types中定义的标签片段
 
+portType :用来定义服务器端的SEI 接口名
+    operation(操作对应行为)：用来指定SEI中的处理请求的方法
+        input:指定客户端应用传过来的数据，会引用上面定义的message标签
+        output:指定服务器端返回给客户端的数据，会引用上面的message标签
+        
+binding:用来定义SEI的实现类
+    type属性：引用上面定义的portType标签
+    <soap:binding style="document"> :绑定的数据是一个document(xml)
+    <operation>:用来定义实现类的方法
+        <soap:operation style= "document">传输的是document(xml)
+        input:
+            <soap:body use="literal">:传输的是一个xml形式的文本数据
+        output:指定服务器端返回给客户端的数据
+            <soap : body use="literal"/>:文本数据
+
+service:服务器端的一个webService的容器
+    name属性：它用于指定客户端容器类
+    port:用来指定一个服务器端处理请求的入口(SEI的实现)
+        binding属性：引用上面定义的<binding>
+        address:当前webService的请求地址
+        
+        
+        
+        
+         
+    
