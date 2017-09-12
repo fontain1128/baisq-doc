@@ -64,3 +64,5 @@ Caused by: java.lang.NoSuchMethodError: com.opensymphony.xwork2.spring.SpringObj
 <!DOCTYPE struts PUBLIC
 	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	
+## bug2
