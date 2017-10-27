@@ -6,7 +6,7 @@ Entry<key,value>中key是threadlocal的实例，如何保证key实例是不同�
 Entry<key,value>中key引用threadlocal的实例，为什么是弱引用，以及为什么为什么内存泄漏，以及如何避免内存泄漏
 
 
-threadLocal应用场景以及entry[] table数组扩容算法
+ThreadLocal应用场景以及Entry[] table数组扩容算法
 [http://blog.xiaohansong.com/2016/08/06/ThreadLocal-memory-leak/]
 
 
